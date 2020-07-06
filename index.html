@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+          <ul class="sub-nav">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2 Item 3</a></li>
+            <li><a href="#">Item 3 Item 3 Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html">About page</a>
+        </li>
+        <li><a href="index.html">ToS</a></li>
+        <li><a href="index.html">Comission Infos</a></li>
+        <li><a href="index.html">Closed Species</a></li>
+        <li><a href="index.html">Where to find me</a></li>
+      </ul>
+    </nav>
+
+    <style>
+      body {
+        padding: 20px;
+        margin: 0;
+      }
+
+      .main-nav {
+        display: block;
+        width: 100%;
+        list-style: none;
+      }
+
+      .main-nav > ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        border-top: solid 1px #b3b3b3;
+        border-bottom: solid 1px #b3b3b3;
+      }
+
+      .main-nav ul li {
+        margin: 0;
+        display: inline;
+        position: relative;
+      }
+
+      .main-nav ul li:hover > a {
+        background-color: #b3b3b3;
+        color: white;
+      }
+
+      .main-nav ul li:hover ul {
+        display: block;
+      }
+
+      .main-nav ul li a {
+        padding: 14px 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #515151;
+        display: inline-block;
+      }
+
+      .sub-nav {
+        position: absolute;
+        display: none;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+
+      .sub-nav li {
+        display: block;
+        position: relative;
+      }
+
+      .main-nav ul li ul.sub-nav li a {
+        white-space: nowrap;
+        border-bottom: solid 1px #b3b3b3;
+        display: block;
+      }
+    </style>
+  </body>
+</html>
